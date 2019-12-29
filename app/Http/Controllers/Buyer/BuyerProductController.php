@@ -10,7 +10,7 @@ class BuyerProductController extends ApiController
 {
     /**
      * Display a listing of the resource.
-     *
+     * some write here
      * @return \Illuminate\Http\Response
      */
     public function index(Buyer $buyer)

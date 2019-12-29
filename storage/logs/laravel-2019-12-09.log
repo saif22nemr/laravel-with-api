@@ -1,0 +1,276 @@
+[2019-12-09 15:34:21] local.ERROR: Command "saverel" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"saverel\" is not defined. at C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php:670)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(236): Symfony\\Component\\Console\\Application->find('saverel')
+#1 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\laravel\est_api\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-12-09 16:16:34] local.ERROR: Target class [App\Http\Controllers\Category/CategoryController] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Http\\Controllers\\Category/CategoryController] does not exist. at C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:805)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#1 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(629): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#2 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(769): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#3 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#4 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#5 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#6 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(173): Illuminate\\Routing\\Route->gatherMiddleware()
+#7 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(117): Illuminate\\Foundation\\Console\\RouteListCommand->getMiddleware(Object(Illuminate\\Routing\\Route))
+#8 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(89): Illuminate\\Foundation\\Console\\RouteListCommand->getRouteInformation(Object(Illuminate\\Routing\\Route))
+#9 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Routing\\Route), 0)
+#10 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(638): array_map(Object(Closure), Array, Array)
+#11 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(90): Illuminate\\Support\\Collection->map(Object(Closure))
+#12 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(74): Illuminate\\Foundation\\Console\\RouteListCommand->getRoutes()
+#13 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->handle()
+#14 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#18 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#19 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#20 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(1011): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(272): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\xampp\\htdocs\\laravel\est_api\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class App\\Http\\Controllers\\Category/CategoryController does not exist at C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:803)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(803): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#1 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#2 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(629): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#3 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(769): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#4 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#5 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#6 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#7 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(173): Illuminate\\Routing\\Route->gatherMiddleware()
+#8 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(117): Illuminate\\Foundation\\Console\\RouteListCommand->getMiddleware(Object(Illuminate\\Routing\\Route))
+#9 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(89): Illuminate\\Foundation\\Console\\RouteListCommand->getRouteInformation(Object(Illuminate\\Routing\\Route))
+#10 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Routing\\Route), 0)
+#11 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(638): array_map(Object(Closure), Array, Array)
+#12 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(90): Illuminate\\Support\\Collection->map(Object(Closure))
+#13 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(74): Illuminate\\Foundation\\Console\\RouteListCommand->getRoutes()
+#14 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->handle()
+#15 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#16 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#18 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#19 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#20 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#21 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(1011): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(272): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 C:\\xampp\\htdocs\\laravel\est_api\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 {main}
+"} 
+[2019-12-09 16:19:11] local.ERROR: Target class [App\Http\Controllers\Buyers\BuyersController] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Http\\Controllers\\Buyers\\BuyersController] does not exist. at C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:805)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#1 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(629): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#2 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(769): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#3 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#4 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#5 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#6 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(173): Illuminate\\Routing\\Route->gatherMiddleware()
+#7 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(117): Illuminate\\Foundation\\Console\\RouteListCommand->getMiddleware(Object(Illuminate\\Routing\\Route))
+#8 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(89): Illuminate\\Foundation\\Console\\RouteListCommand->getRouteInformation(Object(Illuminate\\Routing\\Route))
+#9 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Routing\\Route), 11)
+#10 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(638): array_map(Object(Closure), Array, Array)
+#11 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(90): Illuminate\\Support\\Collection->map(Object(Closure))
+#12 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(74): Illuminate\\Foundation\\Console\\RouteListCommand->getRoutes()
+#13 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->handle()
+#14 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#18 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#19 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#20 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(1011): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(272): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\xampp\\htdocs\\laravel\est_api\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class App\\Http\\Controllers\\Buyers\\BuyersController does not exist at C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:803)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(803): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#1 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#2 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(629): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#3 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(769): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#4 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#5 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#6 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#7 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(173): Illuminate\\Routing\\Route->gatherMiddleware()
+#8 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(117): Illuminate\\Foundation\\Console\\RouteListCommand->getMiddleware(Object(Illuminate\\Routing\\Route))
+#9 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(89): Illuminate\\Foundation\\Console\\RouteListCommand->getRouteInformation(Object(Illuminate\\Routing\\Route))
+#10 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Routing\\Route), 11)
+#11 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(638): array_map(Object(Closure), Array, Array)
+#12 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(90): Illuminate\\Support\\Collection->map(Object(Closure))
+#13 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(74): Illuminate\\Foundation\\Console\\RouteListCommand->getRoutes()
+#14 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->handle()
+#15 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#16 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#18 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#19 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#20 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#21 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(1011): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(272): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 C:\\xampp\\htdocs\\laravel\est_api\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 {main}
+"} 
+[2019-12-09 16:19:26] local.ERROR: Target class [App\Http\Controllers\Buyers\BuyerController] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Http\\Controllers\\Buyers\\BuyerController] does not exist. at C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:805)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#1 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(629): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#2 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(769): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#3 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#4 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#5 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#6 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(173): Illuminate\\Routing\\Route->gatherMiddleware()
+#7 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(117): Illuminate\\Foundation\\Console\\RouteListCommand->getMiddleware(Object(Illuminate\\Routing\\Route))
+#8 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(89): Illuminate\\Foundation\\Console\\RouteListCommand->getRouteInformation(Object(Illuminate\\Routing\\Route))
+#9 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Routing\\Route), 11)
+#10 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(638): array_map(Object(Closure), Array, Array)
+#11 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(90): Illuminate\\Support\\Collection->map(Object(Closure))
+#12 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(74): Illuminate\\Foundation\\Console\\RouteListCommand->getRoutes()
+#13 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->handle()
+#14 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#18 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#19 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#20 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(1011): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(272): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\xampp\\htdocs\\laravel\est_api\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class App\\Http\\Controllers\\Buyers\\BuyerController does not exist at C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:803)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(803): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#1 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(681): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#2 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(629): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#3 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(769): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#4 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(233): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#5 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(833): Illuminate\\Routing\\Route->getController()
+#6 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#7 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(173): Illuminate\\Routing\\Route->gatherMiddleware()
+#8 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(117): Illuminate\\Foundation\\Console\\RouteListCommand->getMiddleware(Object(Illuminate\\Routing\\Route))
+#9 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(89): Illuminate\\Foundation\\Console\\RouteListCommand->getRouteInformation(Object(Illuminate\\Routing\\Route))
+#10 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Routing\\Route), 11)
+#11 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(638): array_map(Object(Closure), Array, Array)
+#12 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(90): Illuminate\\Support\\Collection->map(Object(Closure))
+#13 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(74): Illuminate\\Foundation\\Console\\RouteListCommand->getRoutes()
+#14 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->handle()
+#15 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#16 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#18 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#19 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#20 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#21 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(1011): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(272): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 C:\\xampp\\htdocs\\laravel\est_api\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 {main}
+"} 
+[2019-12-09 19:04:04] local.ERROR: Class 'App\Providers\Schema' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Providers\\Schema' not found at C:\\xampp\\htdocs\\laravel\est_api\\app\\Providers\\AppServiceProvider.php:27)
+[stacktrace]
+#0 [internal function]: App\\Providers\\AppServiceProvider->boot()
+#1 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#2 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(829): Illuminate\\Container\\Container->call(Array)
+#7 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(812): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\AppServiceProvider))
+#8 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\AppServiceProvider), 19)
+#9 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(813): array_walk(Array, Object(Closure))
+#10 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#11 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(212): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#12 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#13 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#14 C:\\xampp\\htdocs\\laravel\est_api\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2019-12-09 19:05:00] local.ERROR: Command "make:" is ambiguous.
+Did you mean one of these?
+    make:channel      Create a new channel class
+    make:command      Create a new Artisan command
+    make:controller   Create a new controller class
+    make:event        Create a new event class
+    make:exception    Create a new custom exception class
+    make:factory      Create a new model factory
+    make:job          Create a new job class
+    make:listener     Create a new event listener class
+    make:mail         Create a new email class
+    make:middleware   Create a new middleware class
+    make:model        Create a new Eloquent model class
+    make:notification Create a new notification class
+    make:observer     Create a new observer class
+    make:policy       Create a new policy class
+    make:provider     Create a new service provider class
+    make:request      Create a new form request class
+    make:resource     Create a new resource
+    make:rule         Create a new validation rule
+    make:seeder       Create a new seeder class
+    make:test         Create a new test class
+    make:migration    Create a new migration file {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:\" is ambiguous.
+Did you mean one of these?
+    make:channel      Create a new channel class
+    make:command      Create a new Artisan command
+    make:controller   Create a new controller class
+    make:event        Create a new event class
+    make:exception    Create a new custom exception class
+    make:factory      Create a new model factory
+    make:job          Create a new job class
+    make:listener     Create a new event listener class
+    make:mail         Create a new email class
+    make:middleware   Create a new middleware class
+    make:model        Create a new Eloquent model class
+    make:notification Create a new notification class
+    make:observer     Create a new observer class
+    make:policy       Create a new policy class
+    make:provider     Create a new service provider class
+    make:request      Create a new form request class
+    make:resource     Create a new resource
+    make:rule         Create a new validation rule
+    make:seeder       Create a new seeder class
+    make:test         Create a new test class
+    make:migration    Create a new migration file at C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php:710)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(236): Symfony\\Component\\Console\\Application->find('make:')
+#1 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\laravel\est_api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\laravel\est_api\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
