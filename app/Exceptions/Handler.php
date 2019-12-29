@@ -52,7 +52,7 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $exception)
     {
         if($exception instanceof ValidationException )
-            return $this->convertValidationExceptionToResponse();
+            return $this->convertValidationExceptionToResponse($exception,$request);
         if($exception instanceof ModelNotFoundException){
             $modelName = $exception->getModel();
             //return 'home '.$modelName;
@@ -66,17 +66,31 @@ class Handler extends ExceptionHandler
         if($exception instanceof MethodNotAllowedHttpException){
             return $this->errorResponse('This d found!',404);
         }
+        if($exception instanceof HttpException)
+            return $this->errorResponse('Http Exception',404);
         return parent::render($request, $exception);
     }
     protected function convertValidationExceptionToResponse(ValidationException $e, $request)
     {
+        /**
+         * 
+         *  [$e] -> for get message of error and know what field is wrong.
+         *  [$request] -> it will return back all data you insert inside your form.
+         *  Note: when exception happen, it will stop run the controller and will run this exception. 
+         *  -> Here for make custom exception like this exception.   
+         *      */
         //return 'error here';
-        if ($e->response) {
-            return $e->response;
-        }
-
-        return $request->expectsJson()
-                    ? $this->invalidJson($request, $e)
-                    : $this->invalid($request, $e);
+        print_r($request->all());
+        //return $e->getMessage();
+        
+        $error = $e->validator->errors()->getMessages();
+        return $this->errorResponse($error, 422);
+//        if ($e->response) {
+//            return $e->response;
+//        }
+//
+//        return $request->expectsJson()
+//                    ? $this->invalidJson($request, $e)
+//                    : $this->invalid($request, $e);
     }
 }
