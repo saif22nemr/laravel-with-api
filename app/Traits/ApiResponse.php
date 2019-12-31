@@ -16,16 +16,16 @@ trait ApiResponse //make this for response
 		return response()->json(['error'=>$message],$code);
 	}
 
-
 	protected function showAll(Collection $collection,$code=200){
 		if($collection->isEmpty())
 			return $this->successResponse($collection,$code);
 		$transformer = $collection->first()->transformer;
 		$collection = $this->sortData($collection, $transformer);
 		$collection = $this->filterData($collection, $transformer);
+		$collection = $this->paginate($collection);
 		$collection = $this->dataTransformer($collection, $transformer);
 		
-		// $collection = $this->paginate($collection);
+		
 		//$collection = $this->cacheResponse($collection);
 		return $this->successResponse($collection,$code);
 	}
@@ -44,7 +44,7 @@ trait ApiResponse //make this for response
 			'pre_page' => 'integer|min:2|max:50'
 		]);
 		if(request()->has('pre_page'))
-			$prePage = request()->pre_page;
+			$prePage = (int)request()->pre_page;
 		$page = LengthAwarePaginator::resolveCurrentPage(); // for get the crrent page
 		//[LengthAwarePaginator] implament use Illuminate\Pagination\LengthAwarePaginator;
 		//[prePage] => count of collection in page.
@@ -54,6 +54,7 @@ trait ApiResponse //make this for response
 		$paginate = new LengthAwarePaginator($result,$collection->count(),$prePage,$page,[
 			'path' => LengthAwarePaginator::resolveCurrentPath(),
 		]);
+		$paginate->appends(request()->all());
 		return $paginate;
 	}
 	//for transformer ..
