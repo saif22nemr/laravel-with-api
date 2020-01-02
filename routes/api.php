@@ -34,11 +34,14 @@ Route::resource('products.transactions','Product\ProductTransactionController',[
 Route::resource('products.buyers','Product\ProductBuyerController',['only'=>['index']]);
 Route::resource('products.categories','Product\ProductCategoryController',['except'=>['create','edit']]);
 Route::resource('products.buyers.transactions','Product\ProductBuyerTransactionController',['only'=>['store']]);
+Route::resource('products.sellers','Product\ProductSellerController',['only'=>['show']]);
 /**
 * Transaction
 */
 Route::resource('transactions','Transaction\TransactionController',['only'=>['show','index']]);
 Route::resource('transactions.categories','Transaction\TransactionCatrgoryController',['only'=>['index']]);
+Route::resource('transactions.buyers','Transaction\TransactionBuyerController',['only'=>['index']]);
+Route::resource('transactions.products','Transaction\TransactionProductController',['only'=>['index']]);
 /**
 * Seller
 */

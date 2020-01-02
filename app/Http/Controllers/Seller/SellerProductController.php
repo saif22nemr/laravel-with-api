@@ -5,12 +5,17 @@ namespace App\Http\Controllers\Seller;
 use App\Http\Controllers\ApiController;
 use App\Product;
 use App\Seller;
+use App\Transformers\ProductTransformer;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 class SellerProductController extends ApiController
 {
+    public function __construct(){
+        parent::__construct();
+        $this->middleware('transformer.input:'.ProductTransformer::class)->only(['update','store']);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -37,8 +42,8 @@ class SellerProductController extends ApiController
     public function store(Request $request,User $seller)
     {
         $roles = [
-            'name'=> 'required',
-            'description' => 'required',
+            'name'=> 'required|min:2',
+            'description' => 'required|min:4',
             'quantity' => 'required|integer|min:1',
             'image' => 'required|image'
         ];

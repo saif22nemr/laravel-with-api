@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Seller;
 
 use App\Http\Controllers\ApiController;
 use App\Seller;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class SellerController extends ApiController
 {
@@ -13,10 +15,16 @@ class SellerController extends ApiController
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {
-        $sellers = Seller::all();
-        return $this->showAll($sellers);
+        $user = User::find(1);
+        Auth::login($user);
+        if(Auth::check()){
+            $sellers = Seller::all();
+            return $this->showAll($sellers);
+        }
+        return $this->errorResponse('You not authontication to show the sellers. '.Auth::check(),405);
     }
 
     /**

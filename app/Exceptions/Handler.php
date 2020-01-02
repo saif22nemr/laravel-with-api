@@ -59,7 +59,7 @@ class Handler extends ExceptionHandler
             return $this->errorResponse('This model [ '.$modelName.' ] not found in this model',404);
         }
         if($exception instanceof AuthorizationException){
-            $this->errorResponse($exception->getMessage(),403);
+            return $this->errorResponse($exception->getMessage(),403);
         }
         if($exception instanceof NotFoundHttpException)
             return $this->errorResponse('This url not found!',404);
@@ -68,6 +68,7 @@ class Handler extends ExceptionHandler
         }
         if($exception instanceof HttpException)
             return $this->errorResponse('Http Exception',404);
+        //return "error";
         return parent::render($request, $exception);
     }
     protected function convertValidationExceptionToResponse(ValidationException $e, $request)
@@ -80,7 +81,7 @@ class Handler extends ExceptionHandler
          *  -> Here for make custom exception like this exception.   
          *      */
         //return 'error here';
-        print_r($request->all());
+        //print_r($request->all());
         //return $e->getMessage();
         
         $error = $e->validator->errors()->getMessages();

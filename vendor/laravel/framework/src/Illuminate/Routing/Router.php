@@ -752,7 +752,7 @@ class Router implements BindingRegistrar, RegistrarContract
         if ($response->getStatusCode() === Response::HTTP_NOT_MODIFIED) {
             $response->setNotModified();
         }
-
+        echo 'from here========================';
         return $response->prepare($request);
     }
 

@@ -39,6 +39,28 @@ class BuyerTransformer extends TransformerAbstract
             'isVerified'=>(int)$buyer->verified,
             'creationDate'=>$buyer->created_at,
             'lastUpdate'=>$buyer->updated_at,
+            'links' => [
+                [
+                    'rel' => 'self',
+                    'href'=> route('buyers.show',$buyer->id),
+                ],
+                [
+                    'rel' => 'buyers.products',
+                    'href'=> route('buyers.products.index',$buyer->id),
+                ],
+                [
+                    'rel' => 'buyers.categories',
+                    'href'=> route('buyers.categories.index',$buyer->id),
+                ],
+                [
+                    'rel' => 'buyers.sellers',
+                    'href'=> route('buyers.sellers.index',$buyer->id),
+                ],
+                [
+                    'rel' => 'buyers.transactions',
+                    'href'=> route('buyers.transactions.index',$buyer->id),
+                ],
+            ],
         ];
     }
     public static function originalAttribute($index){
@@ -49,6 +71,17 @@ class BuyerTransformer extends TransformerAbstract
             'isVerified'=>'verified',
             'creationDate'=>'created_at',
             'lastUpdate'=>'updated_at',
+        ];
+        return isset($attributes[$index])?$attributes[$index] : null;
+    }
+    public static function transformedAttribute($index){
+        $attributes =  [
+            'id'=>'buyerId',
+            'name'=>'name',
+            'email'=>'email',
+            'verified'=>'isVerified',
+            'created_at'=>'creationDate',
+            'updated_at'=>'lastUpdate',
         ];
         return isset($attributes[$index])?$attributes[$index] : null;
     }

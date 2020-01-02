@@ -7,5 +7,10 @@ use App\Traits\ApiResponse;
 class ApiController extends Controller
 {
     //
+    public function __construct(){
+        //parent::__construct();
+        
+    }
     use ApiResponse;
+    
 }
